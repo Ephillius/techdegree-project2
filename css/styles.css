@@ -41,13 +41,12 @@ h2 {
 	margin: 0;
 }
 
-.contact-content h2 {
+.contact-container h2 {
 	padding: 50px 0 30px 0;
 }
 
-.main-header,
-.main-footer {
-	padding: 1em 0;
+.main-header {
+	padding-bottom: 1em;
 }
 
 hr {
@@ -74,65 +73,189 @@ hr {
 	font-size: 23px;
 	font-weight: 800;
 	padding: 10px 0;
-	margin: 0;
 }
 
 .profile {
 	width: 70%;
 }
 
-.main-header p {
+.intro-container p {
 	margin: 20px 0;
 	color: #7f7f7f;
 }
 
-.container {
+.header-container,
+.intro-container,
+.portfolio-container {
 	width: 90%;
 	margin: 0 auto;;
 }
 
-.contact-content p {
+.contact-container p {
 	color: #7f7f7f
 }
 
-.contact-content p:last-child {
+.contact-container p:last-child {
 	margin-bottom: 0;
 	padding-bottom: 60px;
 }
 
-.contact-content a {
+.contact-container a {
 	text-transform: lowercase;
 	font-weight: 700;
 	color: #7f7f7f;
 	padding-left: 10px;
 }
-#portfolio h2 {
+
+.portfolio-container h2 {
 	padding-bottom: 40px;
 }
 
-#portfolio div {
+.project {
 	padding-bottom: 40px;
 }
 
-#portfolio p {
+.project p {
 	font-size: 15px;
-	padding-left: 4px;
-	padding-right: 4px;
+	width: 97%;
+	margin: 0 auto;
 }
 
 .main-footer {
 	padding: 16px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.main-footer p {
 	font-size: 13px;
 	font-weight: 800;
 }
 
+.name {
+	float: left;
+}
+
+.mobile-only {
+	float: right;
+}
+
+.footer-nav {
+	display: none;
+}
 
 
-@media and (min-width: 768px) {
+/*******************************
+TABLET MEDIA QUERY
+*******************************/
 
+@media only screen and (min-width: 768px) {
+	.main-nav li {
+		display: inline-block;
+		padding: 0 20px;
+	}
+
+	.main-nav a {
+		background-color: transparent;
+	}
+
+	.profile {
+		width: 40%;
+		float: right;
+	}
+
+	.intro-container p {
+		width: 58%;
+		float: left;
+		text-align: left;
+	}
+
+	.main-header {
+		padding-top: 25px;
+		padding-bottom: 60px;
+	}
+
+	.project {
+		display: inline-block;
+		width: 50%;
+		margin-right: -4px;
+		padding-right: 5px;
+		padding-left: 5px;
+		vertical-align: top;
+	}
+
+	.project p {
+		width: 83%;
+	}
+
+	.contact-container p:first-of-type {
+		width: 60%;
+		padding-bottom: 25px;
+		margin: 0 auto;
+	}
+
+	.mobile-only {
+		display: none;
+	}
+
+	.footer-nav {
+		display: block;
+		float: right;
+	}
+
+	.footer-nav li {
+		float: left;
+		padding-left: 40px;
+	}
 } 
+
+
+/*******************************
+DESKTOP MEDIA QUERY
+*******************************/
+
+@media only screen and (min-width: 1024px) {
+	body {
+		padding: 0 30px;
+	}
+
+	.header-container,
+	.intro-container,
+	.portfolio-container {
+		width: 96%;
+	}
+
+	.title {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.project {
+		width: 33%;
+		padding-right: 7px;
+		padding-left: 7px;
+		padding-bottom: 60px;
+	}
+
+	.project p {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.contact-container p:first-of-type {
+		width: 47%;
+	}
+
+	.main-footer {
+		padding-bottom: 0;
+	}
+} 
+
+
+/*******************************
+CLEARFIX CHEAT
+*******************************/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
