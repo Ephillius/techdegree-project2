@@ -41,6 +41,17 @@ h2 {
 	margin: 0;
 }
 
+.skills-container h2 {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.skills-container ul {
+	margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
 .contact-container h2 {
 	padding: 50px 0 30px 0;
 }
@@ -56,17 +67,16 @@ hr {
     background: #dcdcdc; 
 }
 
+.main-header hr {
+	width: 90%;
+	margin: 60px auto 40px;
+}
 .main-nav a {
 	padding: 10px 0;
 	margin: 5px 0;
 	display: block;
 	background-color: white;
 	font-size: 15px;
-}
-
-.main-nav a:active {
-	color: white;
-	background-color: #4a4a4a;
 }
 
 .title {
@@ -79,16 +89,29 @@ hr {
 	width: 70%;
 }
 
-.intro-container p {
+.intro-container p,
+.skills-container p {
 	margin: 20px 0;
+	color: #7f7f7f;
+}
+
+.skills-container li {
+	font-weight: 700;
 	color: #7f7f7f;
 }
 
 .header-container,
 .intro-container,
+.skills-container,
 .portfolio-container {
 	width: 90%;
 	margin: 0 auto;;
+}
+
+.skills-container li {
+	padding: 10px 0;
+	margin: 5px 0;
+	display: block;
 }
 
 .contact-container p {
@@ -139,6 +162,12 @@ hr {
 	display: none;
 }
 
+@media only screen and (max-width: 767px) {
+	.main-nav a:active {
+		color: white;
+		background-color: #4a4a4a;
+	}
+}
 
 /*******************************
 TABLET MEDIA QUERY
@@ -147,15 +176,11 @@ TABLET MEDIA QUERY
 @media only screen and (min-width: 768px) {
 	.main-nav li {
 		display: inline-block;
-		padding: 0 20px;
+		padding-left: 20px;
 	}
 
 	.main-nav a {
 		background-color: transparent;
-	}
-
-	.main-nav a:hover {
-		color: grey;
 	}
 
 	.profile {
@@ -171,7 +196,7 @@ TABLET MEDIA QUERY
 
 	.main-header {
 		padding-top: 25px;
-		padding-bottom: 60px;
+		padding-bottom: 20px;
 	}
 
 	.project {
@@ -209,6 +234,7 @@ TABLET MEDIA QUERY
 
 	.header-container,
 	.intro-container,
+	.skills-container,
 	.portfolio-container,
 	.main-footer {
 		max-width: 1150px;
@@ -227,6 +253,7 @@ DESKTOP MEDIA QUERY
 
 	.header-container,
 	.intro-container,
+	.skills-container,
 	.portfolio-container {
 		width: 96%;
 	}
@@ -241,6 +268,10 @@ DESKTOP MEDIA QUERY
 
 	.main-nav {
 		float: right;
+	}
+
+	a:hover {
+		color: grey;
 	}
 
 	.project {
