@@ -126,7 +126,13 @@ hr {
 	justify-content: space-between;
 }
 
-.main-footer p{
-	font-size: 15px;
+.main-footer p {
+	font-size: 13px;
 	font-weight: 800;
 }
+
+
+
+@media and (min-width: 768px) {
+
+} 
