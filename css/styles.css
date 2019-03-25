@@ -154,6 +154,10 @@ TABLET MEDIA QUERY
 		background-color: transparent;
 	}
 
+	.main-nav a:hover {
+		color: grey;
+	}
+
 	.profile {
 		width: 40%;
 		float: right;
@@ -225,6 +229,10 @@ DESKTOP MEDIA QUERY
 	.intro-container,
 	.portfolio-container {
 		width: 96%;
+	}
+
+	.header-container {
+		vertical-align: top;
 	}
 
 	.title {
