@@ -202,6 +202,13 @@ TABLET MEDIA QUERY
 		float: left;
 		padding-left: 40px;
 	}
+
+	.header-container,
+	.intro-container,
+	.portfolio-container,
+	.main-footer {
+		max-width: 1150px;
+	}
 } 
 
 
@@ -246,6 +253,7 @@ DESKTOP MEDIA QUERY
 
 	.main-footer {
 		padding-bottom: 0;
+		margin: 0 auto;
 	}
 } 
 
